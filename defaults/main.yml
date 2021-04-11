@@ -1,0 +1,12 @@
+---
+
+# Role: bjornaru.packages
+# File: defaults/main.yml
+
+packages_group: []
+packages_group_state: latest
+
+packages_host: []
+packages_host_state: latest
+
+...

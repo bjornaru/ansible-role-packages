@@ -1,0 +1,20 @@
+---
+
+# Role: bjornaru.packages
+# File: tasks/main.yml
+
+- name: (packages) - Install packages from group_vars
+  become: yes
+  package:
+    name: "{{ packages_group }}"
+    state: "{{ packages_group_state }}"
+
+- name: (packages) - Install packages from host_vars
+  become: yes
+  package:
+    name: "{{ packages_host }}"
+    state: "{{ packages_host_state }}"
+
+...
+
+
